@@ -1,0 +1,37 @@
+{
+  "name": "0x10",
+  "version": "1.0.0",
+  "description": "15 puzzle",
+  "author": "Roman Bauer",
+  "homepage": "https://romasan.github.io",
+  "scripts": {
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "build": "webpack --mode production",
+    "analyse": "node ./node_modules/webpack/bin/webpack.js --config ./webpack.config.js --profile --json > stats.json && webpack-bundle-analyzer ./stats.json"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.0",
+    "mini-css-extract-plugin": "^0.4.3",
+    "node-sass": "^4.9.3",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "react-hot-loader": "^4.3.11",
+    "sass-loader": "^7.1.0",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "immutability-helper": "^2.8.1",
+    "lodash": "^4.17.15",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
