@@ -3,11 +3,9 @@
   "version": "1.0.0",
   "description": "15 puzzle",
   "author": "Roman Bauer",
-  "homepage": "https://romasan.github.io",
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.js --mode development",
-    "build": "webpack --mode production",
-    "analyse": "node ./node_modules/webpack/bin/webpack.js --config ./webpack.config.js --profile --json > stats.json && webpack-bundle-analyzer ./stats.json"
+    "build": "webpack --mode production"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.2",

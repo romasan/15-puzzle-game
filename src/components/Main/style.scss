@@ -1,0 +1,29 @@
+* {
+  user-select: none;
+}
+html {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  margin: 0px;
+  padding: 10px;
+  background: #f1f1f1;
+  font-family: sans-serif;
+}
+.main {
+  .hidden {
+    display: none;
+  }
+  .header {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20pt;
+    height: 40px;
+  }
+  .stat {
+    text-align: center;
+  }
+}

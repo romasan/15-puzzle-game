@@ -1,0 +1,38 @@
+.field-wrap {
+    padding-left: 50%;
+    margin-top: 50px;
+}
+.field {
+    border: 10px solid #e69700;
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    &.win {
+        pointer-events: none;
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: #ffffff;
+            position: absolute;
+            left: 1px;
+            top: 1px;
+            z-index: 2;
+            opacity: .9;
+            display: inline-block;
+        }
+        &::after {
+            content: 'Поздрвавляю, ты выиграл!';
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            left: 0px;
+            top: 180px;
+            z-index: 3;
+            display: inline-block;
+            font-weight: bold;
+            font-size: 18pt;
+        }
+    }
+}
