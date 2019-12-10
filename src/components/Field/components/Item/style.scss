@@ -4,16 +4,15 @@
     display: inline-block;
     text-align: center;
     border: 1px solid #eeeeee;
-    // transition: transform .3s ease-out;
+    transition: transform .2s ease-out;
     width: 100px;
     height: 100px;
     line-height: 100px;
     z-index: 1;
     font-weight: bold;
     font-size: 32pt;
+    box-sizing: border-box;
     &-0 {
-        z-index: 0;
-        background: #c0c0c0;
-        font-size: 0px;
+        opacity: 0;
     }
 }

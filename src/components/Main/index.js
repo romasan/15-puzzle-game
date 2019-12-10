@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-// import update from "immutability-helper";
-// import classNames from "classnames";
 import Field from "@components/Field";
 import { genField, handMove, checkWin } from "./helpers/field.js";
 import "./style.scss";
