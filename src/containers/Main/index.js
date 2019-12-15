@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import Field from "@components/Field";
 import { genField, handMove, checkWin } from "./helpers/field.js";
+import data from "./data";
 import "./style.scss";
 
+@data
 class Main extends Component {
 
   constructor (props) {
@@ -14,9 +16,10 @@ class Main extends Component {
   }
 
   componentDidMount () {
-    this.setState(state => ({
-      field: genField()
-    }));
+    // this.setState(state => ({
+    //   field: genField()
+    // }));
+    this.props.genField();
   }
 
   move = v => {
@@ -25,7 +28,8 @@ class Main extends Component {
 
   render () {
 
-    const { field } = this.state;
+    const { field } = this.props;
+    
     const win = checkWin(field);
 
     return (

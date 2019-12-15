@@ -27,6 +27,8 @@ module.exports = {
         extensions: ['.js', '.jsx', '.json'],
         alias: {
             '@components': path.resolve(__dirname, 'src/components'),
+            '@containers': path.resolve(__dirname, 'src/containers'),
+            '@reducers': path.resolve(__dirname, 'src/reducers'),
             '@config': path.resolve(__dirname, 'src/config'),
         }
     },
